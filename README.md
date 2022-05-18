@@ -1,7 +1,7 @@
 # Projeto de Previsão de vendas da Rossmann com Machine Learning
 
 <div align="center">
-<img src="https://www.cosmetic-business.com/media/mandant/globale-verfuegbare-Medien/News-Upload/CosmeticBusiness/2020/Mai/ROSSMANN_Zentrale_Logo.jpg" width="600px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dirk_Rossmann_GmbH.jpg/1200px-Dirk_Rossmann_GmbH.jpg" width="500px" />
 </div>
 
 <br><br>
@@ -14,6 +14,11 @@
  Com milhares de gerentes individuis prevendo vendas com base em seu contexto, a precisão dos resultados podem sofrer muitas variações, e isso prejudicaria na tomada de decisão do CFO.<br>
  
  Logo o CFO pediu ao time de dados uma solução que venha fazer essa previsão de forma mais precisa, rápida e prática, podendo acessar de qualquer lugar com um simples smartphone<br>
+ 
+ ## Premissas do negócio
+- Os dias em que as lojas foram fechadas foram retiradas da análise.
+- Foram consideradas apenas lojas com valores de venda maior que 0.
+- Para as lojas que não possuíam informações de 'Competition Distance', foi considerado a maior distância observada no conjunto de dados.
  
  ## Sobre os dados
  
@@ -39,13 +44,13 @@
 |  Promo2Since[Year/Week] |  descreve o ano e a semana em que a loja começou a participar da Promo2 |
 |  PromoInterval | descreve os intervalos consecutivos de início da promoção 2, nomeando os meses em que a promoção é iniciada novamente. Por exemplo. "Fev, maio, agosto, novembro" significa que cada rodada começa em fevereiro, maio, agosto, novembro de qualquer ano para aquela loja |
 
-## Premissas do negócio
-- Os dias em que as lojas foram fechadas foram retiradas da análise.
-- Foram consideradas apenas lojas com valores de venda maior que 0.
-- Para as lojas que não possuíam informações de 'Competition Distance', foi considerado a maior distância observada no conjunto de dados.
+
 
 ## Planejamento da solução
-O projeto foi criado através do método CRSIP-DM, aplicando os seguintes passos:<br>
+O projeto foi criado através do método CRSIP-DM, aplicando os seguintes passos:<br><br>
+<div align="center">
+<img src="https://scontent.fmii9-1.fna.fbcdn.net/v/t39.30808-6/282036074_2782292678583974_2011897632509970238_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=730e14&_nc_eui2=AeEm8bgQ4EUSmR4cJ2EMFr5g-bO6dlGkCSH5s7p2UaQJIQ0yKVjaKcgkOb1d86ynTG7rdxZgEv29CEiT4YKOSDKd&_nc_ohc=amE1GHrA-YgAX8N35iH&_nc_ht=scontent.fmii9-1.fna&oh=00_AT-CFIr1tja-QnMu6ICrXZg5jOmhiGNKaYpM0pCadJenWw&oe=62898432" width="600px" />
+</div>
 
 #### Passo 01 - Descrição dos dados:<br>
 Nesta etapa, o objetivo é entender o que os dados podem nos dizer, foi usado métricas estatísticas pada identificar outliers e também analisar méticas de estatístícas básicas como média, mediana, máximo, mínimo, range, skew, kurtosis e desvio padrão. Também foi realizado alguns ajustes em fetures do dataset como preenchimento de NA's por exmplo.
