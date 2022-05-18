@@ -3,7 +3,7 @@
 #### AVISO: É um projeto fictício inspirado no desafio "Rossmann Store Sales" publicado no kaggle ( https://www.kaggle.com/c/rossmann-store-sales ), mas com todas etapas de um projeto real.
 
 <div align="center">
-<img src="https://www.cosmetic-business.com/media/mandant/globale-verfuegbare-Medien/News-Upload/CosmeticBusiness/2020/Mai/ROSSMANN_Zentrale_Logo.jpg" width="600px" />
+<img src="https://scontent.fmii9-1.fna.fbcdn.net/v/t39.30808-6/281752562_2782332161913359_4956668997691908172_n.jpg?stp=dst-jpg_p180x540&_nc_cat=101&ccb=1-6&_nc_sid=730e14&_nc_eui2=AeF3uxQDYsB7gur594DLOIyLL6yRbmKVkYUvrJFuYpWRhXiG_NLPg3A7ii1PUajpWkoL4TfmiXhHL6HBC5hi2HgU&_nc_ohc=EBP4vETnUjIAX_bw-RK&tn=nzFSmjrCcyH-qWlv&_nc_ht=scontent.fmii9-1.fna&oh=00_AT9g9u4Pl2IT1mOi305c4C2XLsLzHtQ6weJxA2KSax4l6A&oe=628A7F21" width="400px" />
 </div>
 
 <br><br>
