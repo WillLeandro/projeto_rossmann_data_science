@@ -47,7 +47,10 @@
 - Para as lojas que não possuíam informações de 'Competition Distance', foi considerado a maior distância observada no conjunto de dados.
 
 ## Planejamento da solução
-O projeto foi criado através do método CRSIP-DM, aplicando os seguintes passos:<br>
+O projeto foi criado através do método CRSIP-DM, aplicando os seguintes passos:<br><br>
+<div align="center">
+<img src="https://scontent.fmii9-1.fna.fbcdn.net/v/t39.30808-6/282036074_2782292678583974_2011897632509970238_n.jpg?stp=dst-jpg_p180x540&_nc_cat=106&ccb=1-6&_nc_sid=730e14&_nc_eui2=AeEm8bgQ4EUSmR4cJ2EMFr5g-bO6dlGkCSH5s7p2UaQJIQ0yKVjaKcgkOb1d86ynTG7rdxZgEv29CEiT4YKOSDKd&_nc_ohc=amE1GHrA-YgAX8N35iH&_nc_ht=scontent.fmii9-1.fna&oh=00_AT-Qa65Vxlx2WSboLgIEkV9PJGtOQe_V8MREOcIQA0O6Qg&oe=62898432" width="600px" />
+</div>
 
 #### Passo 01 - Descrição dos dados:<br>
 Nesta etapa, o objetivo é entender o que os dados podem nos dizer, foi usado métricas estatísticas pada identificar outliers e também analisar méticas de estatístícas básicas como média, mediana, máximo, mínimo, range, skew, kurtosis e desvio padrão. Também foi realizado alguns ajustes em fetures do dataset como preenchimento de NA's por exmplo.
