@@ -1,24 +1,21 @@
-# Projeto de Previsão de vendas da Rossmann com Machine Learning
+# Projeto de Previsão de vendas de 6 semanas  da  Rossmann com Machine Learning
+
+#### AVISO: É um projeto fictício inspirado no desafio "Rossmann Store Sales" publicado no kaggle ( https://www.kaggle.com/c/rossmann-store-sales ), mas com todas etapas de um projeto real.
 
 <div align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dirk_Rossmann_GmbH.jpg/1200px-Dirk_Rossmann_GmbH.jpg" width="500px" />
+<img src="https://www.cosmetic-business.com/media/mandant/globale-verfuegbare-Medien/News-Upload/CosmeticBusiness/2020/Mai/ROSSMANN_Zentrale_Logo.jpg" width="600px" />
 </div>
 
 <br><br>
 ## Um pouco sobre a rede Rossmann
- A história da empresa começa em 1972: Naquela época, Dirk Rossmann abriu a primeira drogaria self-service na Alemanha. Hoje, a Dirk Rossmann GmbH, com 56.500 funcionários e 4.361 filiais, é uma das maiores redes de drogarias da Europa. Em 2021, o Grupo ROSSMANN alcançou vendas de 11,1 bilhões de euros na Alemanha, Polônia, Hungria, República Tcheca, Albânia, Kosovo, Espanha e Turquia. Até hoje, a Dirk Rossmann GmbH é uma empresa familiar gerida pelo proprietário, ativa internacionalmente e é de propriedade majoritária da família Rossmann. Além disso, o AS Watson Group global tem uma participação de 40% na empresa. <br>
+ A história da empresa começa em 1972: Naquela época, Dirk Rossmann abriu a primeira drogaria self-service na Alemanha. Hoje, a Dirk Rossmann GmbH, com mais de  56.000 funcionários e 4.361 filiais, é uma das maiores redes de drogarias da Europa.
  
  ## Desafio de  negócio
- Em uma reunião com todos os gerentes da rede, o CFO solicitou uma previsão do faturamento de cada loja nas próximas 6 semanas, com objetivo de identificar quais lojas teriam faturamento suficiente para realizar reformas em sua estrutura.<br>
+ O diretor de vendas da Rossmann quer estimar o faturamento de cada loja nas próximas 6 semanas, com objetivo de identificar quais lojas teriam faturamento suficiente para realizar reformas em sua estrutura.<br>
  
- Com milhares de gerentes individuis prevendo vendas com base em seu contexto, a precisão dos resultados podem sofrer muitas variações, e isso prejudicaria na tomada de decisão do CFO.<br>
+ Com milhares de gerentes individuais prevendo vendas com base em seu contexto, a precisão dos resultados podem sofrer muitas variações, e isso prejudicaria na tomada de decisão do diretor.<br>
  
- Logo o CFO pediu ao time de dados uma solução que venha fazer essa previsão de forma mais precisa, rápida e prática, podendo acessar de qualquer lugar com um simples smartphone<br>
- 
- ## Premissas do negócio
-- Os dias em que as lojas foram fechadas foram retiradas da análise.
-- Foram consideradas apenas lojas com valores de venda maior que 0.
-- Para as lojas que não possuíam informações de 'Competition Distance', foi considerado a maior distância observada no conjunto de dados.
+ Diante dessa situação o diretor pediu ao time de dados uma solução que venha fazer essa previsão de forma mais precisa, rápida e prática, podendo acessar de qualquer lugar com um simples smartphone<br>
  
  ## Sobre os dados
  
@@ -44,13 +41,13 @@
 |  Promo2Since[Year/Week] |  descreve o ano e a semana em que a loja começou a participar da Promo2 |
 |  PromoInterval | descreve os intervalos consecutivos de início da promoção 2, nomeando os meses em que a promoção é iniciada novamente. Por exemplo. "Fev, maio, agosto, novembro" significa que cada rodada começa em fevereiro, maio, agosto, novembro de qualquer ano para aquela loja |
 
-
+## Premissas do negócio
+- Os dias em que as lojas foram fechadas foram retiradas da análise.
+- Foram consideradas apenas lojas com valores de venda maior que 0.
+- Para as lojas que não possuíam informações de 'Competition Distance', foi considerado a maior distância observada no conjunto de dados.
 
 ## Planejamento da solução
-O projeto foi criado através do método CRSIP-DM, aplicando os seguintes passos:<br><br>
-<div align="center">
-<img src="https://scontent.fmii9-1.fna.fbcdn.net/v/t39.30808-6/282036074_2782292678583974_2011897632509970238_n.jpg?_nc_cat=106&ccb=1-6&_nc_sid=730e14&_nc_eui2=AeEm8bgQ4EUSmR4cJ2EMFr5g-bO6dlGkCSH5s7p2UaQJIQ0yKVjaKcgkOb1d86ynTG7rdxZgEv29CEiT4YKOSDKd&_nc_ohc=amE1GHrA-YgAX8N35iH&_nc_ht=scontent.fmii9-1.fna&oh=00_AT-CFIr1tja-QnMu6ICrXZg5jOmhiGNKaYpM0pCadJenWw&oe=62898432" width="600px" />
-</div>
+O projeto foi criado através do método CRSIP-DM, aplicando os seguintes passos:<br>
 
 #### Passo 01 - Descrição dos dados:<br>
 Nesta etapa, o objetivo é entender o que os dados podem nos dizer, foi usado métricas estatísticas pada identificar outliers e também analisar méticas de estatístícas básicas como média, mediana, máximo, mínimo, range, skew, kurtosis e desvio padrão. Também foi realizado alguns ajustes em fetures do dataset como preenchimento de NA's por exmplo.
