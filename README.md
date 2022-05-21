@@ -89,24 +89,17 @@ Nessa etapa criamos um mapa metal de hipóteses par nos orientar na exploração
 12. Lojas devem vender menos durante as férias escolares
 13. Lojas que abrem aos domingos devem vender mais
 
+#### Passo 06 - Modelagem dos Dados:<br>
 
-#### Passo 01 - Descrição dos dados:<br>
-Nesta etapa, o objetivo é entender o que os dados podem nos dizer, foi usado métricas estatísticas pada identificar outliers e também analisar méticas de estatístícas básicas como média, mediana, máximo, mínimo, range, skew, kurtosis e desvio padrão. Também foi realizado alguns ajustes em fetures do dataset como preenchimento de NA's por exmplo.
 
-#### Passo 02 - Feature Engineering:<br>
-Nesta etapa, foi criado um mapa metal para analisar o fenômeno, suas variáveis e os aspectos que impactam cada variável. A partir disso, foi derivado novos atributos com base nas variáveis originaispara descrever melhor o fenômeno que será modelado.
 
-#### PASSO 03 - Filtragem de variáveis:<br>
-Nesta etapa o objetivo foi filtrar linhas e excluir colunas que não são relevantes para o moddelo, como por exemplo desconsiderar os dias em que as lojas não estavam operando ou não relizaram vendas.
-
-#### PASSO 04 - Análise Exploratória dos Dados:<br>
-Nesta estpa o objetivo foi  explorar os dados para encontrar insigths, entender a relevância das várias para o aprendizado do modelo. Foi relizadas analises univariadas, biváriadas e multivariadas.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #### PASSO - 05 Preparação dos Dados:<br>
 Nesta etapa, os dados foram preparados para o início das aplicações dos modelos de machine learning. Foi utilizadas técnicas de Rescaling e Transformation, através de encodings e nature transformation.
 
 #### PASSO - 06 Seleção de Variáveis:<br>
-Nesta etapa foi utilizado o Boruta para selecionar os melhores atributos para treinar o modelo afim de obter uma melhor acurácia.
+***Também utilizamos o Boruta para selecionar os melhores atributos para treinar o modelo afim de obter uma melhor acurácia.
 
 #### PASSO 07 - Machine Learning Modeling:<br>
 Nesta etapa,foi relizado testes e treinamento em alguns modelos de machine learning, onde comparamos suas respctivas performance e escolha do melhor modelo. Também foi aplicada a técnica de Cross Validation para garantir a performance real sobre os dados selecionados.
