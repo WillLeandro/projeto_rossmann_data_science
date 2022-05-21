@@ -52,6 +52,44 @@ O projeto foi criado através do método CRSIP-DM, aplicando os seguintes passos
 <img src="https://scontent.fmii9-1.fna.fbcdn.net/v/t39.30808-6/282036074_2782292678583974_2011897632509970238_n.jpg?stp=dst-jpg_p180x540&_nc_cat=106&ccb=1-6&_nc_sid=730e14&_nc_eui2=AeEm8bgQ4EUSmR4cJ2EMFr5g-bO6dlGkCSH5s7p2UaQJIQ0yKVjaKcgkOb1d86ynTG7rdxZgEv29CEiT4YKOSDKd&_nc_ohc=amE1GHrA-YgAX8N35iH&_nc_ht=scontent.fmii9-1.fna&oh=00_AT-Qa65Vxlx2WSboLgIEkV9PJGtOQe_V8MREOcIQA0O6Qg&oe=62898432" width="600px" />
 </div>
 
+
+#### Passo 01 - Questão de negócio:<br>
+Recebimento do problema a ser resolvido. Qual a previsão de vendas de cada loja em 6 semanas? Para determinar quanto do budget vai para reformas das lojas.
+
+#### Passo 02 - Entendimento do negócio:<br>
+Entender se a questão de negócio levantada faz sentido para solucionar o problema.
+
+
+#### Passo 03 - Coleta de Dados:<br>
+No mundo real seria o passo onde fariamos consultas SQL e joins, mas nesse caso apenas fizemos um donwnload no Kaggle https://www.kaggle.com/c/rossmann-store-sales 
+
+#### Passo 04 - Limpeza dos Dados:<br>
+Nessa etapa foi realizado a descrição dos dados, feature engineering, seleção de features baseadas no negócio.
+
+#### Passo 05 - Exploração dos Dados:<br>
+Nessa etapa criamos um mapa metal de hipóteses par nos orientar na exploração dos Dados e encontrar insights, entender melhor a relevância das variáveis no aprendizado do modelo. Foram feitas analises univariadas, biváriadas e multivariadas, utilizando os dados numéricos e categóricos do conjunto.
+
+#### Mapa mental:<br>
+<div align="center">
+<img src="https://scontent.fmii9-1.fna.fbcdn.net/v/t39.30808-6/283080931_2785058198307422_9043376111299872483_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHeU4R7QXnpRlPfWXg0KJDjz0IVfB14DK7PQhV8HXgMroTg8F1HTI_Rk8gKHjaA-HdN8Pp_1uHW5VMvHQqZU-_r&_nc_ohc=uCXjCfb8lk8AX9VVu9d&_nc_oc=AQnUts2joWdO_2p6sy-kjNC02jYe_dh3CtZrmoFlIo_5_-rABffS4QlPD2L_hryd4EKnzKigYZvTzyc6f5SUyprI&_nc_ht=scontent.fmii9-1.fna&oh=00_AT9bLQtKQNDl7lHE_ygB4hIwwyVs_oJ8HbUhToap5zvTxA&oe=628E5B34" width="800px" />
+</div>
+
+#### Hipóteses Geradas:<br>
+1. Lojas com maior sortimento devem vender mais
+2. Lojas com concorrentes mais próximos devem vender menos
+3. Lojas com concorrentes mais antigos devem vender mais
+4. Lojas onde os produtos custam menos por mais tempo (promoções ativas) devem vender mais
+5. Lojas com mais dias de promoção devem vender mais
+6. Lojas com promoções mais estendidas devem vender mais
+7. Lojas abertas no feriado de Natal devem vender mais
+8. Lojas devem vender mais ao longo dos anos
+9. Lojas devem vender mais no segundo semestre
+10. As lojas devem vender mais após o dia 10 de cada mês
+11. Lojas devem vender menos nos finais de semana
+12. Lojas devem vender menos durante as férias escolares
+13. Lojas que abrem aos domingos devem vender mais
+
+
 #### Passo 01 - Descrição dos dados:<br>
 Nesta etapa, o objetivo é entender o que os dados podem nos dizer, foi usado métricas estatísticas pada identificar outliers e também analisar méticas de estatístícas básicas como média, mediana, máximo, mínimo, range, skew, kurtosis e desvio padrão. Também foi realizado alguns ajustes em fetures do dataset como preenchimento de NA's por exmplo.
 
