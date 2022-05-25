@@ -89,31 +89,85 @@ Nessa etapa criamos um mapa metal de hipóteses par nos orientar na exploração
 12. Lojas devem vender menos durante as férias escolares
 13. Lojas que abrem aos domingos devem vender mais
 
+#### Principais insights
+**H1. Lojas com maior sortimentos deveriam vender mais.**<br>
+FALSA Lojas com MAIOR SORTIMENTO vendem MENOS
+<div align="center">
+<img src="https://scontent.fmii9-1.fna.fbcdn.net/v/t39.30808-6/283478631_2788066764673232_2140441876371134275_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFQxdMf7AUgB4GcL9ZFjqP4gvEJInh6yL2C8QkieHrIvbtyuhUUp7Ay-gz2Bdpw-gTh6vSWKhI5Ap2clC4i7L5s&_nc_ohc=2xlQytIL-k8AX-QbFTL&_nc_ht=scontent.fmii9-1.fna&oh=00_AT_qCg8YgmVsURd_Lr8WuMLRGqsPscWofKI0xj34Gpgsnw&oe=62927D36" width="800px" />
+</div><br>
+
+**H2. Lojas com competidores mais proximos deverima vender menos.**<br>
+FALSA Lojas com competidores MAIS PROXIMOS vendem MAIS
+<div align="center">
+<img src="https://scontent.fmii9-1.fna.fbcdn.net/v/t39.30808-6/283284880_2788066781339897_2737432107462859078_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeG7L5u-oVxX-ciDBLUUsoskqjMsObsDq3iqMyw5uwOreCP3IzUsU6R3zJCjts5eeXfb4tqgADc_UOwa4pTrfDhh&_nc_ohc=6Gd4G3KgHBYAX9ACB9V&tn=nzFSmjrCcyH-qWlv&_nc_ht=scontent.fmii9-1.fna&oh=00_AT8bkixui7uwk2SI5k2yC2E1z1VzydRbDZB-enPNBVGMUw&oe=6291C411" width="800px"/>
+</div><br>
+
+**H11. lojas deveriam vender menos aos finais de semana.**<br>
+VERDADEIRA Lojas vendem menos aos finais de semana
+<div align="center">
+<img src="https://scontent.fmii9-1.fna.fbcdn.net/v/t39.30808-6/282580899_2788066784673230_7967619590883472596_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHUgTuEiOErm_kahRVC-u_I-EOU-6g7ujP4Q5T7qDu6M_6a1inRJcD2owbjyovLjes8uKPyMBIuG-PsD0pwtzRk&_nc_ohc=UsEbaJAdMIsAX-SsKd8&_nc_ht=scontent.fmii9-1.fna&oh=00_AT8C6Nf1LEur6nYjAqubdSn3tC68AdIlDwPmPEg-TE-oeQ&oe=629293FE" width="800px" />
+</div><br>
+
 #### Passo 06 - Modelagem dos Dados:<br>
-
-
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-#### PASSO - 05 Preparação dos Dados:<br>
-Nesta etapa, os dados foram preparados para o início das aplicações dos modelos de machine learning. Foi utilizadas técnicas de Rescaling e Transformation, através de encodings e nature transformation.
-
-#### PASSO - 06 Seleção de Variáveis:<br>
-***Também utilizamos o Boruta para selecionar os melhores atributos para treinar o modelo afim de obter uma melhor acurácia.
+Nesta etapa, os dados foram preparados para o início das aplicações dos modelos de machine learning. Foram utilizadas técnicas de Rescaling e Transformation, através de encodings e nature transformation, e também o Boruta para selecionar os melhores atributos para treinar o modelo afim de obter uma melhor acurácia.
 
 #### PASSO 07 - Machine Learning Modeling:<br>
-Nesta etapa,foi relizado testes e treinamento em alguns modelos de machine learning, onde comparamos suas respctivas performance e escolha do melhor modelo. Também foi aplicada a técnica de Cross Validation para garantir a performance real sobre os dados selecionados.
+Nesta etapa,foi relizado testes e treinamento em 5 modelos,Random Forest Regressor,XGBoost Regressor, Linear Regression - Lasso, Linear Regressor e Average Model.<br>
+Usamos  o Average Model como base para compararmos os demais modelos  suas respctivas performance e escolha do melhor modelo.<br><br> 
 
-#### PASSO 08 - Hyperparamenter Fine Tunning:<br>
-Com o algorítimo XGBoost escolhido na etapa anterior, foi realizada uma análise través do método Randon Search para escolher os melhores valores para cada parâmetro do modelo. 
+| **Model Name** |  **MAE**  |  **MAPE**  |  **RMSE**  |
+| ------------------- | ------------------- | ------------------- | ------------------- |
+|  Random Forest Regressor | 679.559752 | 0.099934  | 1010.884194 |
+|  XGBoost Regressor | 874.171929 | 0.126807 | 1287.707669 |
+|  Linear Regression - Lasso | 1891.702083 | 0.289165  | 2744.462516 |
+|  Linear Regressor | 1867.086951  | 0.292756 | 2671.056821  |
+|  Average Model | 1354.800167 | 0.206441  | 1835.141019 |
 
-#### PASSO 09 - Tradução e interpretação de erros:<br>
-Nesta etapa o objetivo foi demonstrar o resultado do projeto, onde avaliamos a performance do modelo com viés de negócio, demonstando o resultado financeiro que pode-se esperar do modelo desenvolvido.
+Também foi aplicada a técnica de Cross Validation para garantir a performance real sobre os dados selecionados.<br><br>
 
-#### PASSO 10 - Deploy do modelo em produção:<br>
-Após a execução com sucesso do modelo, foi publicado em um ambiente de nuvem para outras pessoas ou serviços estarem consultando as previsões do modelo e poderem usar os resultados para tomadas de decisões. A plataforma em numvem escolhida foi o Heroku.
+| **Model Name** |  **MAE CV**  |  **MAPE CV**  |  **RMSE CV**  |
+| ------------------- | ------------------- | ------------------- | ------------------- |
+|  Random Forest Regressor | 838.34 +/- 218.54 | 0.12 +/- 0.02 | 1257.62 +/- 319.71 |
+|  XGBoost Regressor | 1054.69 +/- 172.95 | 0.15 +/- 0.02 | 1521.43 +/- 238.54 |
+|  Linear Regression - Lasso | 2116.39 +/- 341.51 | 0.29 +/- 0.01 | 3057.77 +/- 504.27 |
+|  Linear Regressor | 2081.73 +/- 295.64 | 0.3 +/- 0.02 | 2952.53 +/- 468.38 |
 
-#### PASSO 11 - Bot do Telegram:<br>
+
+A melhor performace encontrada foi do  Random Forest Regressor, porém escolhemos o modelo XGBoost Regressor. A razão dessa escolha é que o XGBoost é um modelo mais leve para operar em produção e não aparesenta diferença significativa de desempenho.
+
+#### PASSO 08 - Avaliação do Algorítimo<br>
+**Hyperparamenter Fine Tunning:**<br><br>
+Com o algorítimo XGBoost escolhido na etapa anterior, foi realizada uma análise através do método Randon Search para escolher os melhores valores para cada parâmetro do modelo e encontrar a performance final do XGBoost.<br>
+
+**Desempenho dos dados de teste:**<br>
+
+| **Model Name** |  **MAE**  |  **MAPE**  |  **RMSE**  |
+| ------------------- | ------------------- | ------------------- | ------------------- |
+|  XGBoost Regressor | 661.845808 | 0.097704  | 951.379757|
+
+**Tradução e interpretação de erros:**<br><br>
+Nesta etapa o objetivo foi demonstrar o resultado do projeto, onde avaliamos a performance do modelo com viés de negócio, demonstando o resultado financeiro que pode-se esperar do modelo desenvolvido.<br>
+
+| **Store** |  **Predictions**  |  **MAE**  |  **MAPE**  |  **days**  |  **Worst_scenario**  |  **best_scenario**  |
+| ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- | ------------------ |
+|  1 | 169305.70 | 307.78  | 0.07 | 37 | R$ 157.881,01 | R$ 180.730,40 |
+|  2 | 182122.09 | 395.48  | 0.08 | 37 | R$ 167.491,11 | R$ 196.753,09 |
+|  3 | 258817.89 | 538.91  | 0.08 | 37 | R$ 238.878,23 | R$ 278.757,55 |
+|  4 | 338596.25 | 944.09  | 0.09 | 37 | R$ 303.664,96 | R$ 373.527,54 |
+|  5 | 174173.37 | 388.33  | 0.09 | 37 | R$ 159.805,20 | R$ 188.541.55 |
+
+#### PASSO 09 - Deploy do modelo em produção:<br>
+Após a execução com sucesso do modelo, foi publicado em um ambiente de nuvem para outras pessoas ou serviços estarem consultando as previsões do modelo e poderem usar os resultados para tomadas de decisões. A plataforma em nuvem escolhida foi o Heroku (www.heroku.com).<br>
+
+Abaixo temos a representação de todo o esquema em produção.<br>
+
+<div align="center">
+<img src="https://scontent.fmii9-1.fna.fbcdn.net/v/t39.30808-6/283674553_2789064747906767_7987155453759978199_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=P7Me25iEX3AAX-l1Zxj&_nc_ht=scontent.fmii9-1.fna&oh=00_AT83CasiGCGB04byEJNYNoaqdoAGgJe93Vj72mk6_HdBOQ&oe=6292E97E" width="800px" />
+</div><br>
+
+
+
+#### PASSO 10 - Bot do Telegram:<br>
 A etapa final do projeto foi criar um bot no aplicativo de mensagens Telegram, que possibilita consultar as previsões de qualquer lugar e a qualquer momento, aplicação que também relaizdo deploy na plataforma em nuvem Heroku.
 
 
