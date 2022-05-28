@@ -72,7 +72,7 @@ Nessa etapa foi realizado a descrição dos dados, feature engineering, seleçã
 Nessa etapa criamos um mapa metal de hipóteses par nos orientar na exploração dos Dados e encontrar insights, entender melhor a relevância das variáveis no aprendizado do modelo. Foram feitas analises univariadas, biváriadas e multivariadas, utilizando os dados numéricos e categóricos do conjunto.
 
 #### Mapa mental:<br>
-<div align="center">
+<div align="left">
 <img src="https://user-images.githubusercontent.com/92799101/170358069-38ebd7a5-4de6-400c-938a-275794ef60f5.png" width="700px" />
 </div>
 
@@ -93,22 +93,22 @@ Nessa etapa criamos um mapa metal de hipóteses par nos orientar na exploração
 
 #### Principais insights
 **H1. Lojas com maior sortimentos deveriam vender mais.**<br>
-FALSA Lojas com MAIOR SORTIMENTO vendem MENOS
-<div align="center">
+FALSA Lojas com MAIOR SORTIMENTO vendem MENOS<br>
+<div align="left">
 <img src="https://user-images.githubusercontent.com/92799101/170357722-9fd5f050-466c-4f18-a8b8-5d1f64d3d052.png" width="700px" />
-</div><br>
+</div><br><br>
 
 **H2. Lojas com competidores mais proximos deverima vender menos.**<br>
-FALSA Lojas com competidores MAIS PROXIMOS vendem MAIS
-<div align="center">
+FALSA Lojas com competidores MAIS PROXIMOS vendem MAIS<br>
+<div align="left">
 <img src="https://user-images.githubusercontent.com/92799101/170357861-cb27012b-248a-4443-b663-6b85d21c2f7b.png" width="700px"/>
-</div><br>
+</div><br><br>
 
 **H11. lojas deveriam vender menos aos finais de semana.**<br>
-VERDADEIRA Lojas vendem menos aos finais de semana
-<div align="center">
+VERDADEIRA Lojas vendem MENOS aos finais de semana<br>
+<div align="left">
 <img src="https://user-images.githubusercontent.com/92799101/170357539-aae2083e-c5ba-4c54-9227-f54473598112.png" width="700px" />
-</div><br>
+</div><br><br>
 
 #### Passo 06 - Modelagem dos Dados:<br>
 Nesta etapa, os dados foram preparados para o início das aplicações dos modelos de machine learning. Foram utilizadas técnicas de Rescaling e Transformation, através de encodings e nature transformation, e também o Boruta para selecionar os melhores atributos para treinar o modelo afim de obter uma melhor acurácia.
@@ -163,16 +163,19 @@ Após a execução com sucesso do modelo, foi publicado em um ambiente de nuvem 
 
 Abaixo temos a representação de todo o esquema em produção.<br>
 
-<div align="center">
+<div align="left">
 <img src="https://user-images.githubusercontent.com/92799101/170357095-3299e2a4-4d0e-42c3-99a1-656f86a51ab4.png" width="700px" />
 </div><br>
 
 
 
 #### PASSO 10 - Bot no Telegram:<br>
-A etapa final do projeto foi criar um bot no aplicativo de mensagens Telegram, que possibilita consultar as previsões de cada loja de qualquer lugar e a qualquer momento, na demonstração abaixo as consultas foram realizadas através de um smartphone, aplicação essa que também relaizamos deploy na plataforma em nuvem Heroku.
+A etapa final do projeto foi criar um bot no aplicativo de mensagens Telegram, que possibilita consultar as previsões de cada loja de qualquer lugar e a qualquer momento.<br><br>
 
-
+Demonstração da aplicação:<br>
+<div align="left">
+<img src="https://github.com/WillLeandro/projeto_rossmann_data_science/blob/386f8e4ac8304bcab1336f6af1a851b78102c2f9/img/Design%20sem%20nome.gif" width="400px", Height="600px" />
+</div><br>
 
 
  
